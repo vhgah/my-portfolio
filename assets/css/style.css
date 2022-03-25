@@ -266,7 +266,7 @@ img {
   display: inline-block;
   color: var(--body-color);
   background: var(--first-color);
-  padding: 0.75rem 1rem;
+  padding: 0.7rem 1rem;
   border-radius: 0.5rem;
   font-weight: var(--font-medium);
   transition: 0.4s;
@@ -504,4 +504,38 @@ img {
 .active-work {
   background-color: var(--first-color);
   color: var(--body-color);
+}
+
+/* == WORK == */
+.testimonial__card {
+  background-color: var(--container-color);
+  margin-bottom: 3rem;
+  border-radius: 1.5rem;
+  padding: 1.25rem 1.5rem;
+  height: fit-content;
+}
+.testimonial__image {
+  width: 60px;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+  height: 60px;
+}
+.testimonial__name {
+  margin-bottom: 0.25rem;
+  font-size: var(--normal-font-size);
+  font-weight: var(--font-medium);
+}
+.testimonial__description {
+  font-size: var(--small-font-size);
+}
+
+/* == SWIPER == */
+.swiper-pagination-bullet {
+  background-color: var(--text-color-light);
+}
+.swiper-pagination-bullet-active {
+  background-color: var(--first-color);
+}
+.swiper-wrapper {
+  height: fit-content;
 }

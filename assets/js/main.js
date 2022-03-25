@@ -38,3 +38,23 @@ function workActive() {
 }
 
 workItem.forEach((item) => item.addEventListener("click", workActive));
+
+var swiperTestimonial = new Swiper(".testimonial__container", {
+  spaceBetween: 24,
+  loop: true,
+  grabCursor: true,
+
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  breakpoints: {
+    576: {
+      slidersPerView: 2,
+    },
+    768: {
+      slidersPerView: 2,
+      spaceBetween: 48,
+    },
+  },
+});
