@@ -12,10 +12,29 @@ modalButtons.forEach((modalButton, index) => {
   });
 });
 
-modalCloseButtons.forEach((modalCloseButton, index) => {
+modalCloseButtons.forEach((modalCloseButton) => {
   modalCloseButton.addEventListener("click", () => {
     modalViews.forEach((modalView) => {
       modalView.classList.remove("active-modal");
     });
   });
 });
+
+let mixerWork = mixitup(".work__container", {
+  selectors: {
+    target: ".work__card",
+  },
+  animation: {
+    duration: 300,
+  },
+});
+
+const workItem = document.querySelectorAll(".work__item");
+function workActive() {
+  workItem.forEach((item) => {
+    item.classList.remove("active-work");
+  });
+  this.classList.add("active-work");
+}
+
+workItem.forEach((item) => item.addEventListener("click", workActive));

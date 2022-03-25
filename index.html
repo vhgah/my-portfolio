@@ -5,10 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="shortcut icon" href="" />
-    <link
-      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
-      rel="stylesheet"
-    />
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
   </head>
   <body>
@@ -395,13 +392,63 @@
         <section class="work section" id="work">
             <span class="section__subtitle">My Portfolio</span>
             <h2 class="section__title">Recent Works</h2>
+
+            <div class="work__filters">
+                <div class="work__item active-work" data-filter="all">All</div>
+                <div class="work__item" data-filter=".web">Web</div>
+                <div class="work__item" data-filter=".movil">Movil</div>
+                <div class="work__item" data-filter=".design">Design</div>
+            </div>
+
+            <div class="work__container container grid">
+                <div class="work__card mix web">
+                    <img src="assets/img/work_1.JPG" alt="" class="work__image">
+
+                    <h3 class="work__title">Web Design</h3>
+                    <a href="" class="work__button">
+                        Demo <i class="bx bx-right-arrow-alt work__icon"></i>
+                     </a>
+                </div>
+                <div class="work__card mix web">
+                    <img src="assets/img/work_1.JPG" alt="" class="work__image">
+
+                    <h3 class="work__title">Web Design</h3>
+                    <a href="" class="work__button">
+                        Demo <i class="bx bx-right-arrow-alt work__icon"></i>
+                     </a>
+                </div>
+                <div class="work__card mix movil">
+                    <img src="assets/img/work_1.JPG" alt="" class="work__image">
+
+                    <h3 class="work__title">Web Design</h3>
+                    <a href="" class="work__button">
+                        Demo <i class="bx bx-right-arrow-alt work__icon"></i>
+                     </a>
+                </div>
+                <div class="work__card mix web">
+                    <img src="assets/img/work_1.JPG" alt="" class="work__image">
+
+                    <h3 class="work__title">Web Design</h3>
+                    <a href="" class="work__button">
+                        Demo <i class="bx bx-right-arrow-alt work__icon"></i>
+                     </a>
+                </div>
+                <div class="work__card mix design">
+                    <img src="assets/img/work_1.JPG" alt="" class="work__image">
+
+                    <h3 class="work__title">Web Design</h3>
+                    <a href="" class="work__button">
+                       Demo <i class="bx bx-right-arrow-alt work__icon"></i>
+                    </a>
+                </div>
+            </div>
         </section>
     </main>
 
     <footer class="footer">
         
     </footer>
-
+    <script src="assets/js/mixitup.min.js"></script>
     <script src="assets/js/main.js"></script>
   </body>
 </html>
