@@ -704,7 +704,7 @@ body.light-theme {
   --body-color: hsl(var(--second-hue), 100%, 99%);
   --container-color: #fff;
 }
-.light-theme .scroll-header {
+.light-theme .header {
   box-shadow: 0 2px 4px hsla(0, 0%, 1%, 0.1);
 }
 .light-theme .nav__menu {
@@ -776,7 +776,7 @@ body.light-theme {
   }
   .services__modal-content {
     width: 500;
-    padding: 4.5rem 2.5rem 2.5rem;
+    padding: 4rem 2.5rem 2.5rem;
   }
   .services__modal-description {
     padding: 0 3.5rem;
@@ -813,8 +813,11 @@ body.light-theme {
     margin-left: auto;
     margin-right: auto;
   }
+  .section::first-child {
+    padding: 2.5rem 0 1rem;
+  }
   .section {
-    padding: 6.5rem 0 1rem;
+    padding: 6rem 0 1rem;
   }
   .section__title {
     margin-bottom: 3.5rem;
@@ -824,7 +827,7 @@ body.light-theme {
   }
   .home__handle {
     width: 330px;
-    margin-top: 5rem;
+    margin-top: 4rem;
   }
   .home__social-link {
     padding: 0.4rem;
