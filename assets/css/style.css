@@ -880,6 +880,12 @@ body.light-theme {
   }
   .work__image {
     margin-bottom: 1rem;
+    -webkit-transition: 0.4s ease;
+    transition: 0.4s ease;
+  }
+  .work__image:hover {
+    -webkit-transform: scale(1.03);
+    transform: scale(1.03);
   }
   .work__title {
     margin-bottom: 0.5rem;
