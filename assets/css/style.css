@@ -905,3 +905,31 @@ body.light-theme {
     border-radius: 0.5rem;
   }
 }
+
+/* == ANIMATION == */
+@keyframes sectionHomehanle {
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.home__handle {
+  animation: sectionHomehanle 1.6s ease-in-out forwards;
+  opacity: 0;
+  transform: translateY(50%);
+}
+.home__data,
+.nav__logo,
+.change-theme,
+.home__scroll {
+  animation: fadeIn 2.5s ease-in-out forwards;
+}
