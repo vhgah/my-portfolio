@@ -474,10 +474,11 @@ img {
 }
 .work__item {
   border-radius: 0.5rem;
-  padding: 0.25rem 0.75rem;
+  padding: 0.5rem 1rem;
   font-weight: var(--font-medium);
   color: var(--title-color);
   cursor: pointer;
+  white-space: nowrap;
 }
 .work__card {
   background-color: var(--container-color);
@@ -746,7 +747,11 @@ body.light-theme {
 }
 
 /* == SMALL SCREEN == */
-@media screen and (max-width: 320px) {
+@media screen and (min-width: 320px) {
+  .work__item {
+    padding: 0.3rem 0.5rem;
+    column-gap: 0.25rem;
+  }
 }
 
 /* == MEDIUM SCREEN == */
